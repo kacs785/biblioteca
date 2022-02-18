@@ -1,46 +1,97 @@
+*{
+    padding:0 ;
+    margin: 0;
+    font-family:  'M PLUS 2',sans-serif;
+    font-size: 15px;
+}
 body{
-    background-color: #141f29;
-    font-size: sans-serif;
+    background-color:#292D4A ;
 }
-.titulo{
-text-align: center;
-color:#10c7af;
-
+#nav-bar{
+    background-color: #454C7D;
+    padding:5px
 }
 
-.image_banner{
-width: 100%;
-opacity: 0.4 ;
+#nav-bar h1{
+    display:inline-block;
+    white-space:nowrap;
+    color: #fff;
+    font-size: 1rem;
+    border-right: 3px solid;
+    width: 18ch;
+    animation: typing 3s steps(20), blink .5s infinite ;
+    overflow: hidden;
+}
 
-}   
-.consult_box{
-    margin: 10px;
-    width: 500px;
-    border:2px solid #4a6a8a ;
-    height: 25px;
+#nav-bar h1 span{
+    font-style: bold;
+    font-size: 2em;
+    color: #6F7BC9;
+}
+.bt-dark-mood{
+    float: right;
+    margin: 9px 0px 11px 0px;
+    padding: 0px 3px 0 3px;
+    border:groove 1px;
+    border-radius: 30%;
+    background: none;
+}
+#setting-bar{
+    display: none;
+}
+
+hr{
+    color: #ABAFC9;
+    margin: 0em 5em ;
+    size: 100%;
+}
+
+.box-search{
+    margin: 15px 20px;
+}
+.consult{
+    margin: 1rem;
+    padding: 0rem 1rem;
+}
+
+
+.container{
+    padding: 0 2rem;
+    border: dashed 2px #2B4757;
     border-radius: 5px;
- }
-
-form{
-    display: flex;
-    align-items: center;
-    padding-top:50px;
+    color: #fef;
+    height:50rem;
+    width: auto;
+    overflow: hidden;
+    overflow-y:scroll;
 }
-#select_curso{
-    background-color:#bdcbd9 ;
-    width: 200px;
-    height: 30px;
-    display: grid;
-    border-radius: 5px;
+.container div {
+    display:inline-flex;
+    border:solid 3px #2B4757;
+    width: auto;
+    margin:3rem;
+    padding: 1rem;
     text-align: center;
-    font-size:15px ;
-    font-style: oblique;
-    border: none;
 }
-.enter {
-    width: 200px;    
-    height: 30px;
+
+.container div img{
+    display:block ;
+    width: 100%;
 
 }
-.flex-box{}
+
+.container div:hover {
+    cursor: pointer;
+    transform:scale(1.1);
+}
+
+
+@keyframes typing{
+    from { width: 0; }
+}
+
+@keyframes blink{
+    50%{ border-color: transparent;}
+}
+
 
