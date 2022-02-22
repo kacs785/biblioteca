@@ -1,0 +1,11 @@
+@import '/styles/style.css';@import 'resposive.css';@import '/styles/theme_mode.css';
+ *{
+    padding:0 ;
+    margin: 0;
+    font-family:  'M PLUS 2',sans-serif;
+    font-size: 15px;
+}
+
+body{
+    background-color:#292D4A ;
+}
