@@ -1,9 +1,9 @@
-@import '/styles/style.css';@import 'resposive.css';@import '/styles/theme_mode.css';
+@import url(/styles/normalize.css);@import '/styles/fontawesome.css';@import '/styles/style.css';@import 'resposive.css';@import '/styles/theme_mode.css';
 
  *{
     padding:0 ;
     margin: 0;
-    font-family:  'M PLUS 2',sans-serif;
+    font-family:  'M PLUS 2',sans-serif,monospace;
     font-size: 15px;
 }
 

@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Virtual Librery</title>
+	<script src="https://kit.fontawesome.com/229ab1970e.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="../styles/global.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,28 +15,35 @@
 <body>
 
 	<header>
-		<nav>
+
+		</section>
+		</article>
+		<nav id="nav-bar">
 			<div id="setting-bar">
 				<div id="close-menu">
-
 				</div>
 				<div>
 					<h2 class="menu-hover"><span>filters</span></h2>
 				</div>
 			</div>
 
-
-			<div id="nav-bar">
-				<h1><span>V</span>irtual <span>L</span>ibrery</h1>
-				<button type="button" class="bt-theme-mode">d</button>
-
+			<div class="nav-title">
+				<h1>
+					<span>V</span>irtual <span>L</span>ibrery
+				</h1>
 			</div>
-		</nav>
-	</header>
+			<button type="button" class="bt-theme-mode"><i class="nf-custom-go"></i></button>
 
+		</nav>
+		<button class="colaps-menu" type="button">
+			<i class="fa-solid fa-down-from-line"></i>
+		</button>
+
+
+	</header>
 	<hr>
 	<main>
-		<div class="box-search">
+		<div id="box-search">
 			<!--<div class="banner">-->
 			<!--<img src="../image/image_banner.jpg" alt="" class="image_banner">-->
 			<!--</div>-->
@@ -50,7 +58,8 @@
 
 
 				<input type="text" class="consult_box">
-				<button type="submit" class="bt-search"><i class="fa fa-search"></i>search
+				<button type="submit" class="bt-search">
+					<i class="fa fa-search"></i>
 				</button>
 			</form>
 		</div>

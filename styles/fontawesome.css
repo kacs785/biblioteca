@@ -1,0 +1,17 @@
+.fa-solid{
+    display: inline-block;
+    font: normal normal normal  FontAwesome; /* Especificamos que fuente utilizar*/
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-search{
+    font-size: 15px;
+}
+ .fa-bars{
+     font-size: 25px;
+ }
+.nf-custom-go{
+    content: \e626
+}
