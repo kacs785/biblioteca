@@ -20,7 +20,7 @@
     font-size: 1rem;
     border-right: 3px solid;
     width: 10rem;
-    animation: translateLeft 3s steps(20), blink .5s infinite ;
+    animation: translateLeft 3s steps(20), blink 1s infinite ;
     overflow: hidden;
 }
 
@@ -51,27 +51,25 @@ display: none;
 
 }
 
-#box-search{
-    max-width: 100%;
-    display: flex;
-    margin: 30px 20px;
-    align-items: center;
+.consult {
+    display: inline;
+    width: auto;
+    position: absolute;
+    left: 30vw;
+    top:1.5rem;
+    min-width:30vw;
+
 }
-.consult{
-    display: inline-block;
-    position:relative;
-    left: 25%;
-} 
+
 .consult input{
-    height: 27px;
-    background-color: #ABAFC9 ;
-    border: solid 3px #6F7BC9;
+    display:grid;
+    width:100%;
+    top:25%;
 }
-.bt-search{
-    text-align: center;
-    position: relative;
-    padding:2px 20px;
-    border-radius: 2.5px solid;
+
+.consult button, .consult select{
+    width: 25%;
+    padding:0;
 }
 
 .container{

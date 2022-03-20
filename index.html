@@ -4,8 +4,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>Virtual Librery</title>
-	<script src="https://kit.fontawesome.com/229ab1970e.js" crossorigin="anonymous"></script>
+
 	<link rel="stylesheet" href="../styles/global.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,10 +16,32 @@
 <body>
 
 	<header>
-
-		</section>
-		</article>
 		<nav id="nav-bar">
+			<div class="nav-title">
+				<h1>
+					<span>V</span>irtual <span>L</span>ibrery
+				</h1>
+			</div>
+
+			<form action="../scripts/codigo.js" method="post" class="consult">
+
+				<input type="text" class="consult_box">
+				<select name="cursos" id="select_curso">
+					<option value="">selet category</option>
+					<option value="fan wtatic">Fantasy</option>
+					<option value="romance">Romance</option>
+					<option value="art-arqui">Art/Arquitecture</option>
+					<option value="drama">Drama</option>
+				</select>
+				<button type="submit" class="bt-search">
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</button>
+			</form>
+
+			<button class="colaps-menu" type="button">
+				<i class="fa-regular fa-angle-down"></i>
+			</button>
+
 			<div id="setting-bar">
 				<div id="close-menu">
 				</div>
@@ -27,45 +50,12 @@
 				</div>
 			</div>
 
-			<div class="nav-title">
-				<h1>
-					<span>V</span>irtual <span>L</span>ibrery
-				</h1>
-			</div>
-			<button type="button" class="bt-theme-mode"><i class="nf-custom-go"></i></button>
 
 		</nav>
-		<button class="colaps-menu" type="button">
-			<i class="fa-solid fa-down-from-line"></i>
-		</button>
-
-
 	</header>
 	<hr>
 	<main>
-		<div id="box-search">
-			<!--<div class="banner">-->
-			<!--<img src="../image/image_banner.jpg" alt="" class="image_banner">-->
-			<!--</div>-->
-			<form action="../scripts/codigo.js" method="post" class="consult">
-				<select name="cursos" id="select_curso">
-					<option value="">selet category</option>
-					<option value="fan wtatic">Fantasy</option>
-					<option value="romance">Romance</option>
-					<option value="art-arqui">Art/Arquitecture</option>
-					<option value="drama">Drama</option>
-				</select>
-
-
-				<input type="text" class="consult_box">
-				<button type="submit" class="bt-search">
-					<i class="fa fa-search"></i>
-				</button>
-			</form>
-		</div>
-
 		<div Class="message-error">
-
 			<p><span>ingrese busquedad</span></p>
 		</div>
 
@@ -73,8 +63,8 @@
 			<div>
 				<img src="img/portada.jpg" alt="">
 				<span>name of book</span>
-				<button type="button"><i class='nf-fa-bookmark_o'></i></button>
-				<button type="button">leido</button>
+				<button type="button"><i class="fa-regular fa-bookmark"></i></button>
+				<button type="button"><i class="fa-regular fa-eye-slash"></i></button>
 			</div>
 			<!-- <div> -->
 			<!-- 	<img src="img/portada.jpg" alt=""> -->
@@ -111,11 +101,8 @@
 	</main>
 
 
-
-
-
 	<script src="../scripts/codigo.js"></script>
-
+	<script src="https://kit.fontawesome.com/229ab1970e.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
