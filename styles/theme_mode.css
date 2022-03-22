@@ -1,11 +1,20 @@
+@import url(/styles/global.css);
+
+
 .bt-theme-mode{
-    float: right;
-    width: 30px;
-    margin: 9px 0px 11px 0px;
-    padding: 0px 3px 0 3px;
-    border:none;
-    border-radius: 30%;
-    background: #292D50;
+    position: fixed;
+    left: 96%;
+    top:90%;
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    font-size: 2vw;
+    padding: 1px 3px 6px 6px; /* centrado de icono */
+    background: #ffffff50;
+}
+.bt-theme-mode:hover{ /* resaltado de botton de cambio de tema */
+    transform: scale(1.2);
+    background:#fff;
 }
 .bt-theme-mode:active{
 transform: scale(0.9);

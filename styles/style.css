@@ -1,76 +1,110 @@
+@import url(/styles/global.css);
 
-	
-#nav-bar{
-    background-color: #454C7D;
-    padding:5px
+#nav-bar{/* comment */
+    background-color: #454C7D50;
+    height:75vh;
+    border-radius: 0 0 20% 20%;
 }
-.colaps-menu {
-    display: block;
-    width:100%;
-    background-color:red;
-    border: none;
-    margin: 0px 0px;
-}
+
 .nav-title{
+
     display: inline-block;
+    width: auto;
     white-space:nowrap;
+    position:absolute;
+
+
 }
+
 .nav-title h1{
+
     color: #fff;
-    font-size: 1rem;
+    margin:1vw;
+    font-size: 2rem;
     border-right: 3px solid;
-    width: 10rem;
+    width: 16.5rem;
     animation: translateLeft 3s steps(20), blink 1s infinite ;
     overflow: hidden;
+
 }
 
 .nav-title h1 span{
-    font-style: bold;
-    font-size: 2em;
+    font-size: 3rem;
     color: #6F7BC9;
-}
-
-#setting-bar{
-    display: none;
-}
-
-hr{
-    color: #ABAFC9;
-    margin: 0em 5em ;
-    size: 100%;
-}
-
-.message-error {
-background-color:#ff1D45 ;
-color:#000000;
-text-align: center;
-height: 50px;
-padding-top: 1.5rem;
-margin: 1rem;
-display: none;
 
 }
 
 .consult {
-    display: inline;
-    width: auto;
+
+    font-size:1.3rem;
+    width: 40vw;
     position: absolute;
-    left: 30vw;
-    top:1.5rem;
-    min-width:30vw;
+    left: 30rem;
+    top:10rem;
+    min-width:50%;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:center;
+
 
 }
 
+.consult select{
+
+    display:none;
+    width:7vw;
+    text-align:center;
+
+}
 .consult input{
-    display:grid;
-    width:100%;
-    top:25%;
+    border:transparent;
 }
 
-.consult button, .consult select{
-    width: 25%;
-    padding:0;
+.consult button{
+
+    width: 5vw;
+    height: 5vh;
+    margin:1rem;
+    
 }
+
+
+.colaps-menu {
+
+    display: block;
+    width:100%;
+    height:auto;
+    background:none;
+    border: none;
+    padding: 0.2vw;
+    font-size:1.2rem;
+    color:#fff;
+}
+.colaps-menu i {
+    width:2rem;
+    height:1rem
+}
+.colaps-menu:hover{
+    animation: latido 1s infinite;
+}
+#setting-bar{
+    display: none;
+}
+
+
+
+.message-error {
+    background-color:#ff1D45 ;
+    color:#000000;
+    text-align: center;
+    height: 50px;
+    padding-top: 1.5rem;
+    margin: 1rem;
+    display: none;
+
+}
+
 
 .container{
     margin: 1rem 5rem;
@@ -78,20 +112,23 @@ display: none;
     border-radius: 5px;
     color: #fef;
     height:50rem;
-    width: auto;
     overflow-y:scroll;
+    display: flex;
+    flex-direction:column;
 }
 .container div {
-    display:inline-flex;
+    display:flex;
+    flex-direction:column; 
+    justify-content:center ;
     border:solid 3px #2B4757;
-    max-width: 33.3%;
+    max-width: 25vw;
+    min-width: 15vw;
     margin:3rem;
     padding: 1rem;
     text-align: center;
 }
 
 .container div img{
-    display:inline ;
     width: 100%;
 
 }
@@ -106,8 +143,11 @@ display: none;
     from { width: 0; }
 }
 
+@keyframes latido{
+    from { transform:scale(1.5) }
+}
+
 @keyframes blink{
     50%{ border-color: transparent;}
 }
-
 
