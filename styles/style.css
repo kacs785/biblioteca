@@ -1,8 +1,8 @@
 @import url(/styles/global.css);
-
-#nav-bar{/* comment */
+/* barra de titulo y navegacion   */
+#nav-bar{
     background-color: #454C7D50;
-    height:75vh;
+    height:30vh;
     border-radius: 0 0 20% 20%;
 }
 
@@ -12,6 +12,8 @@
     width: auto;
     white-space:nowrap;
     position:absolute;
+    left: 5vw;
+    top: 3vh;
 
 
 }
@@ -19,12 +21,10 @@
 .nav-title h1{
 
     color: #fff;
-    margin:1vw;
     font-size: 2rem;
     border-right: 3px solid;
     width: 16.5rem;
     animation: translateLeft 3s steps(20), blink 1s infinite ;
-    overflow: hidden;
 
 }
 
@@ -33,43 +33,40 @@
     color: #6F7BC9;
 
 }
-
+/* modificacion de form de consulta */
 .consult {
 
     font-size:1.3rem;
-    width: 40vw;
     position: absolute;
-    left: 30rem;
-    top:10rem;
-    min-width:50%;
+    left: 25vw;
+    top:20vh;
     display: flex;
+    max-width: 50vw;
+    min-width: 30vw;
     flex-direction: row;
     align-items:center;
     justify-content:center;
-
 
 }
 
 .consult select{
 
     display:none;
-    width:7vw;
-    text-align:center;
+        text-align:center;
 
 }
 .consult input{
-    border:transparent;
+width: 60vw;
 }
 
 .consult button{
-
-    width: 5vw;
-    height: 5vh;
-    margin:1rem;
+    width: 15vw;
+    margin:0.5rem;
+    padding:0.25rem;
     
 }
 
-
+/* barra de ajustes de filtros */
 .colaps-menu {
 
     display: block;
@@ -93,7 +90,7 @@
 }
 
 
-
+/* manejo de errores */
 .message-error {
     background-color:#ff1D45 ;
     color:#000000;
@@ -102,41 +99,50 @@
     padding-top: 1.5rem;
     margin: 1rem;
     display: none;
-
 }
 
 
+/* contenedor de resultados */
 .container{
     margin: 1rem 5rem;
     border: dashed 2px #2B4757;
     border-radius: 5px;
     color: #fef;
-    height:50rem;
+    max-height: 300vh;
+    min-height:90vh;
+    height:100%;
     overflow-y:scroll;
     display: flex;
-    flex-direction:column;
+    flex-direction:colum;
+    justify-content: flex-start;
+    flex-wrap:wrap;
 }
 .container div {
-    display:flex;
-    flex-direction:column; 
-    justify-content:center ;
     border:solid 3px #2B4757;
-    max-width: 25vw;
-    min-width: 15vw;
-    margin:3rem;
+    width: 12rem;
+    height: 20rem;
+    margin:1rem;
     padding: 1rem;
     text-align: center;
+    display:grid;
+    grid-template:
+    "image image image"
+    "title title tile"
+    "desciption desciption button" 
+    ;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+
 }
 
-.container div img{
-    width: 100%;
 
-}
+
 
 .container div:hover {
-    cursor: pointer;
-    transform:scale(1.1);
+    transform:scale(1.05);
 }
+
+
 
 
 @keyframes translateLeft {
@@ -150,4 +156,6 @@
 @keyframes blink{
     50%{ border-color: transparent;}
 }
-
+@keyframes deslis{
+    from{height:0; }
+}

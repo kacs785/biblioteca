@@ -1,4 +1,4 @@
-@import url(/styles/normalize.css);@import url(/styles/style.css); @import url(/styles/resposive.css);@import url(/styles/theme_mode.css);
+@import url(/styles/normalize.css);@import url(/styles/style.css); @import url(/styles/resposive.css);@import url(/styles/theme_mode.css);@import url(/styles/nerd-fonts-generate.css);
 
 *{
 font-family: "M PLUS 2";
