@@ -2,28 +2,51 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=7,8,edge" />
 
 	<title>Virtual Librery</title>
 
-	<link rel="stylesheet" href="../styles/global.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+2&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+2&display=swap" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="stylesheet" href="styles/style.css" />
+	<link rel="stylesheet" href="styles/normalize.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="styles/resposive.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="styles/theme_mode.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="styles/nerd-fonts-generate.css" type="text/css" media="all" />
+	<script type="module" src="scripts/codigo.js" charset="utf-8"></script>
 </head>
 
 <body>
-
 	<header>
 		<nav id="nav-bar">
+			<div class="mode">
+				<button id="bt-theme-mode" class="bt-theme-mode" type="submit">
+					<i class="nf nf-weather-moon_alt_third_quarter"></i>
+				</button>
+			</div>
+			<div class="log">
+				<button class="login ghost login-in">
+					<span> Sing in </span>
+				</button>
+				<button class="login login-up">
+					<i class="nf nf-mdi-exit_to_app"></i>
+					<span> Sing up </span>
+				</button>
+			</div>
+
 			<div class="nav-title">
-				<h1>
+				<h1 translate="no">
 					<span>V</span>irtual <span>L</span>ibrery
 				</h1>
 			</div>
-
 			<form action="" method="post" class="consult">
+				<input type="text" class="consult_box" id="consult_box" placeholder="  Search" />
+				<button type="submit" class="bt-search">
+					<i class="nf nf-fa-search"></i>
+				</button>
 				<select name="category" id="category" placeholder="category">
 					<option value="">category</option>
 					<option value="fan wtatic">Fantasy</option>
@@ -31,52 +54,72 @@
 					<option value="art-arqui">Art/Arquitecture</option>
 					<option value="drama">Drama</option>
 				</select>
-
-				<input type="text" class="consult_box">
-				<button type="submit" class="bt-search">
-					<i class="fa-solid fa-magnifying-glass"></i>
-				</button>
-
 			</form>
-
 		</nav>
 	</header>
 	<main>
 
-		<button class="colaps-menu" type="button">
-			<i class="fa-solid fa-angles-down"></i>
-			<i class="nf nf-custom-folder"></i>
-		</button>
-
-
 		<div id="setting-bar">
-			<div id="close-menu">
-			</div>
+			<div id="close-menu"></div>
 			<div>
 				<h2 class="menu-hover"><span>filters</span></h2>
 			</div>
 		</div>
 
-		<hr>
+		<hr />
 
-		<section>
-			<p><span Class="message-error">ingrese busquedad</span></p>
-			<div class="container">
-				<div>
-					<img src="img/portada.jpg" alt="">
-					<span>name of book</span>
-					<button type="button"><i class="fa-regular fa-bookmark"></i></button>
-					<button type="button"><i class="fa-regular fa-eye-slash"></i></button>
-				</div>
-
+		<p><span Class="message-error">ingrese busquedad</span></p>
+		<div class="container">
+			<div class="object">
+				<img src="" alt="portada" />
+				<span>name generic</span>
+				<button type="button" class="buttonl">
+					<i class="nf nf-fa-bookmark"></i>
+				</button>
+				<button type="button" class="buttonr">
+					<i class="nf nf-mdi-eye"></i>
+				</button>
+				<section class="star">
+					<input type="radio" name="1" id="1" />
+					<label for="1" class="nf nf-fa-star"></label>
+					<input type="radio" name="2" id="2" />
+					<label for="2" class="nf nf-fa-star"></label>
+					<input type="radio" name="3" id="3" />
+					<label for="3" class="nf nf-fa-star"></label>
+					<input type="radio" name="4" id="4" />
+					<label for="4" class="nf nf-fa-star"></label>
+					<input type="radio" name="" id="5" />
+					<label for="5" class="nf nf-fa-star"></label>
+				</section>
 			</div>
-			<button class="bt-theme-mode" type="submit"><i class="fa-solid fa-moon"></i></button>
+		</div>
 
-		</section>
 	</main>
+	<div class="register">
+		<button type="submit" class="close"><i class="nf nf-fa-close"></i></button>
+		<form class="modal">
+			<input type="text" id="name">
+			<input type="text" id="lastname">
+			<input type="text" id="Email">
+			<input type="text" id="password">
+			<input type="text" id="confirm-password" value="">
+			<button type="submit" class="complete"><i class="nf nf-fa-save "></i></button>
 
-	<script src="../scripts/codigo.js"></script>
-	<script src="https://kit.fontawesome.com/229ab1970e.js" crossorigin="anonymous"></script>
+		</form>
+	</div>
+
+	<div class="input-log">
+		<button type="submit" class="close"><i class="nf nf-fa-close"></i></button>
+		<form class="modal">
+			<h2>Email</h2>
+			<input type="text" id="Email" placeholder="Email">
+			<h2>password</h2>
+			<input type="text" id="password" placeholder="password">
+		</form>
+
+
+	</div>
+
 </body>
 
 </html>

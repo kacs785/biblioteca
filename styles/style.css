@@ -1,161 +1,345 @@
-@import url(/styles/global.css);
-/* barra de titulo y navegacion   */
-#nav-bar{
-    background-color: #454C7D50;
-    height:30vh;
-    border-radius: 0 0 20% 20%;
+/* global  */
+:root {
+	--drak-background-color: #292d4a;
+	--dark-sub-background: #454c7d;
+	--cian: #6f7bc9;
+	--whithe: #eeddee;
+	--black: #353535;
+	--red: #ff1d45;
+	--grey: #454545;
+}
+* {
+	font-family: "M PLUS 2", sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+	padding: 0;
+	margin: 0;
+	border: transparent;
+	white-space: nowrap;
+}
+html {
+	font-size: 62.5%;
+	background-color: var(--drak-background-color);
+}
+body {
 }
 
-.nav-title{
+/*- - - - - - - - - - -- - - - -  */
 
-    display: inline-block;
-    width: auto;
-    white-space:nowrap;
-    position:absolute;
-    left: 5vw;
-    top: 3vh;
+/* nav and position of objects  */
 
-
+#nav-bar {
+	background-color: var(--dark-sub-background);
+	height: 25rem;
+	border-radius: 0 0 15% 15%;
 }
 
-.nav-title h1{
-
-    color: #fff;
-    font-size: 2rem;
-    border-right: 3px solid;
-    width: 16.5rem;
-    animation: translateLeft 3s steps(20), blink 1s infinite ;
-
+/* button theme  */
+.mode {
+	display: inline;
+	justify-content: center;
+}
+.bt-theme-mode {
+	display: inline-block;
+	background: var(--whithe);
+	border-radius: 5%;
+	width: 7rem;
+	margin: 1rem 1rem;
 }
 
-.nav-title h1 span{
-    font-size: 3rem;
-    color: #6F7BC9;
-
+.bt-theme-mode i {
+	font-size: 3rem;
 }
-/* modificacion de form de consulta */
+/* --- - - - - - -- - - - - - - - */
+
+/*buttom login an sing up  */
+.log {
+	float: right;
+	display: inline-flex;
+	justify-content: center;
+}
+.login {
+	margin: 0.9rem 0 0 0.9rem;
+	padding: 0 0.5rem;
+	height: fit-content;
+	font-size: 1.5rem;
+	background: none;
+	border-radius: 5%;
+	position: relative;
+}
+.login span {
+	position: relative;
+	bottom: 0.3rem;
+}
+.ghost {
+	background-color: none;
+	color: var(--black);
+}
+.login-up {
+	border: 1px solid var(--whithe);
+	margin-right: 1rem;
+}
+.login i {
+	font-size: 3rem;
+}
+.login-in {
+	padding: 0.9rem 1rem;
+	top: 0.1rem;
+	background-color: var(--whithe);
+}
+.login:hover {
+	transform: scale(1.09);
+	background-color: var(--whithe);
+}
+/* title position and animation */
+.nav-title {
+	position: relative;
+	bottom: 1rem;
+	display: flex;
+	width: 100%;
+	height: fit-content;
+	white-space: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-title h1 {
+	color: var(--whithe);
+	font-size: 3rem;
+	border-right: 2px solid;
+	margin: 2px;
+	width: 24rem;
+	overflow: hidden;
+	animation: translateLeft 2s steps(20), blink 1s infinite;
+}
+
+.nav-title h1 span {
+	font-size: 4rem;
+	color: var(--cian);
+}
+/*  form of search  */
 .consult {
-
-    font-size:1.3rem;
-    position: absolute;
-    left: 25vw;
-    top:20vh;
-    display: flex;
-    max-width: 50vw;
-    min-width: 30vw;
-    flex-direction: row;
-    align-items:center;
-    justify-content:center;
-
+	position: relative;
+	top: 3rem;
+	font-size: 1.3rem;
+	width: 100%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.consult select{
-
-    display:none;
-        text-align:center;
-
+.consult select {
+	display: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
 }
-.consult input{
-width: 60vw;
-}
-
-.consult button{
-    width: 15vw;
-    margin:0.5rem;
-    padding:0.25rem;
-    
+.consult input {
+	width: 70vw;
+	height: 4rem;
+	border-radius: 7% 0% 0% 7% / 50% 0 0 50%;
+	font-style: italic;
+	font-style: 7rem;
 }
 
+.consult button {
+	width: 5rem;
+	height: 4rem;
+	margin-right: 0.1rem;
+	border-radius: 0 40% 40% 0 / 0 40% 40% 0;
+}
+.consult i {
+	font-size: 2.8rem;
+	position: relative;
+	bottom: 0.1rem;
+}
 /* barra de ajustes de filtros */
 .colaps-menu {
-
-    display: block;
-    width:100%;
-    height:auto;
-    background:none;
-    border: none;
-    padding: 0.2vw;
-    font-size:1.2rem;
-    color:#fff;
+	display: none;
+	width: 100%;
+	height: auto;
+	background: none;
+	border: none;
+	padding: 0.2vw;
+	font-size: 1.2rem;
+	color: var(--whithe);
 }
 .colaps-menu i {
-    width:2rem;
-    height:1rem
+	width: 2rem;
+	font-size: 8rem;
+	height: 1rem;
 }
-.colaps-menu:hover{
-    animation: latido 1s infinite;
+.colaps-menu:hover {
+	animation: latido 1s infinite;
 }
-#setting-bar{
-    display: none;
+#setting-bar {
+	display: none;
 }
 
-
-/* manejo de errores */
+/* error of search  and erroneus entry */
 .message-error {
-    background-color:#ff1D45 ;
-    color:#000000;
-    text-align: center;
-    height: 50px;
-    padding-top: 1.5rem;
-    margin: 1rem;
-    display: none;
+	background-color: var(--red);
+	color: var(--black);
+	text-align: center;
+	height: 50px;
+	padding-top: 1.5rem;
+	margin: 1rem;
+	display: none;
 }
-
 
 /* contenedor de resultados */
-.container{
-    margin: 1rem 5rem;
-    border: dashed 2px #2B4757;
-    border-radius: 5px;
-    color: #fef;
-    max-height: 300vh;
-    min-height:90vh;
-    height:100%;
-    overflow-y:scroll;
-    display: flex;
-    flex-direction:colum;
-    justify-content: flex-start;
-    flex-wrap:wrap;
-}
-.container div {
-    border:solid 3px #2B4757;
-    width: 12rem;
-    height: 20rem;
-    margin:1rem;
-    padding: 1rem;
-    text-align: center;
-    display:grid;
-    grid-template:
-    "image image image"
-    "title title tile"
-    "desciption desciption button" 
-    ;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-
+.container {
+	margin: 5rem 0.5rem;
+	border-radius: 1rem;
+	border: solid 1px var(--whithe);
+	color: var(--whithe);
+	height: 57rem;
+	overflow-y: scroll;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
-
-
-
-.container div:hover {
-    transform:scale(1.05);
+/* visualisation de objects in display */
+.object {
+	font-size: 2rem;
+	box-shadow: 0 0 1rem 0.1rem var(--dark-sub-background);
+	border-radius: 5px;
+	margin: 2rem;
+	background-color: var(--dark-sub-background);
+	width: 50rem;
+	min-width: 30rem;
+	height: 50rem;
+	text-align: center;
+	display: grid;
+	grid-template:
+		"  image      image  "
+		"  title      title  "
+		"  star       star  "
+		"  buttonl    buttonr";
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 3.8fr 0.5fr 0.5fr 0.5fr;
+}
+.object img {
+	grid-area: image;
 }
 
+.object span {
+	grid-area: title;
+	text-align: center;
+}
+.buttonl {
+	grid-area: buttonl;
+}
 
+.buttonr {
+	grid-area: buttonr;
+	width: 100%;
+}
 
+.object button:hover {
+	border: solid 1px var(--whithe);
+}
+
+.object button {
+	align-items: center;
+	font-size: 7rem;
+	cursor: pointer;
+	background: none;
+	height: 5rem;
+	margin-bottom: 0.05rem;
+	color: var(--whithe);
+}
+.object button i {
+	position: relative;
+	bottom: 5vh; /* center of icon */
+}
+.star {
+	align-self: center;
+}
+.star input {
+	display: none;
+}
+.star label {
+	margin: 0.5rem;
+	font-size: 2rem;
+	color: var(--grey);
+}
+.star label:hover {
+	color: gold;
+	transform: scale(1.5);
+}
+.object:hover {
+	transform: scale(1.05);
+}
+
+.register,
+.input-log {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	font-size: 1.5rem;
+	top: 0.5%;
+	transform: translate(-50% -50%);
+	background-color: rgba(0, 12, 20, 25);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.register form,
+.input-log form {
+	width: 50rem;
+	height: 50rem;
+	background-color: var(--dark-sub-background);
+	white-space: nowrap;
+	border: 1px solid var(--whithe);
+	border-radius: 5%;
+}
+
+.modal {
+	border: 3px solid var(--whithe);
+	margin: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.register {
+	display: none;
+}
+.input-log {
+	display: none;
+}
+.close {
+	color: var(--whithe);
+	position: absolute;
+	right: 27%;
+	top: 10%;
+	width: 3rem;
+	border-radius: 15%;
+	background: none;
+}
+
+.modal input,
+.modal h2 {
+	width: 30vw;
+	margin: 0.5rem;
+	margin-left: 8rem;
+	padding: 5px;
+	border-radius: 5% 5% / 50% 50%;
+}
 
 @keyframes translateLeft {
-    from { width: 0; }
+	from {
+		width: 0;
+	}
 }
 
-@keyframes latido{
-    from { transform:scale(1.5) }
+@keyframes latido {
+	from {
+		transform: scale(1.5);
+	}
 }
 
-@keyframes blink{
-    50%{ border-color: transparent;}
-}
-@keyframes deslis{
-    from{height:0; }
+@keyframes blink {
+	50% {
+		border-color: transparent;
+	}
 }

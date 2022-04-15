@@ -1,0 +1,35 @@
+
+@media screen and (min-width: 500px) {
+	
+	.consult input {
+		border-radius: 4% 0 0 4% / 40% 0 0 40%;
+	}
+	.consult button {
+		border-radius: 15% 40% 40% 15% / 0 40% 40% 0;
+	}
+	.container {
+	    justify-content:flex-start;
+	    height:70rem;
+	}
+	.object {
+		width: 35rem;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	
+	.consult input {
+		border-radius: 6% 0% 0% 6% / 100% 0 0 100%;
+		width:70rem;
+	}
+	.consult button {
+		border-radius: 0 40% 40% 0 / 0 50% 50% 0;
+	}
+	.container {
+	    justify-content:start;
+	}
+	.object{
+	    margin:  2rem 0 4rem 6rem;
+	}
+
+}
